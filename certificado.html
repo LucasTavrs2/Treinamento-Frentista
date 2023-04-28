@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TF | Certificado</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+	<header>
+		<div class="container cabecalho">
+			<div class="row">
+				<div class="col-6 aba-nome">
+					<h2 class="nome-site"> <a href="index.html">TF <img src="logoTF.jpeg" style="width: 20%; height:1.5em ;border-radius: 5px; border: 1px solid #FDF063"></a></h2>
+				</div>
+				<div class="col-6 aba-hamburguer">
+					<nav class="logo-hamburguer">
+					    <button class="hamburguer-menu">
+					      <span class="bar"></span>
+					      <span class="bar"></span>
+					      <span class="bar"></span>
+					    </button>
+					    <ul class="nav-links">
+					      <li><a href="material.html">Material do curso</a></li>
+					      <li><a href="avaliacao.html">Avaliações</a></li>
+					      <li><a href="certificado.html">Certificado</a></li>
+					      <li><a href="duvidas.html">Tire sua dúvida</a></li>
+					    </ul>
+					  </nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="nav-total">
+		<div class="container nav-video">
+			<div class="row linha-1">
+				<div class="col-4 coluna-1"> <a href="index.html"> <i class=" botao-back fa-regular fa-arrow-right-to-bracket fa-flip-horizontal"></i></a></div>
+				<div class="col-4 coluna-1"> <h4>Certificado de conclusão do curso "Treinamento Frentista (TF)"</h4> </div>
+				<div class="col-4 coluna-1"></div>
+			</div>
+			<div class="row linha-2" style="background:white">
+				<div class="col-12 coluna-2" style="margin-right: 25em;"> 
+					<ul style="list-style: none;">
+						<li><p>Nota da avaliação: <input type="" name="" placeholder="0%" style="width: 30%"></p></li>
+						<li> <button onclick="certificado()">Emitir o certificado</button> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container foot-div">
+			<div class="row foot-row">
+				<div class="col-6 redes-sociais">
+					<div class="row row-redes-sociais">
+						<div class="col-4 col-redes-sociais"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+						<div class="col-4 col-redes-sociais"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+						<div class="col-4 col-redes-sociais"><a href=""><i class="fa-brands fa-linkedin"></i></a></div>
+					</div>
+				</div>
+				<div class="col-2">TF</div>
+				<div class="col-2"> <a href="https://contate.me/lucas-tavares" class="contato">Contato</a> </div>
+				<div class="col-2"> <a href="" class="quem-somos">Quem somos</a> </div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		alert('Conclua a avaliação e obtenha nota igual ou superior a 70% para tirar o certificado de conclusão!')
+		const hamburguerMenu = document.querySelector(".hamburguer-menu");
+		const navLinks = document.querySelector(".nav-links");
+
+		hamburguerMenu.addEventListener("click", () => {
+		  navLinks.classList.toggle("show-nav");
+		});
+
+		function certificado(){
+			document.write('<button><a href="index.html">Voltar</a></button> <br>Erro: Obtenha 70% de acerto na avaliação para emitir o certificado');
+		}
+
+		
+
+	</script>
+</body>
+</html>
